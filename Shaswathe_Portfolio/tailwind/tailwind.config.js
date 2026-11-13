@@ -1,0 +1,1 @@
+module.exports={content:['../index.html','../js/**/*.js'],theme:{extend:{colors:{ink:'#090a12',violet:'#a78bfa',pink:'#f472d0'}}},plugins:[]};
