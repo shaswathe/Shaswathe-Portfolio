@@ -1,72 +1,540 @@
+
 <!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Shaswathe | Portfolio</title>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/animations.css"><link rel="stylesheet" href="css/responsive.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="Shaswathe's personal portfolio showcasing Data Analytics, Python, SQL, Power BI, projects and engineering experience.">
+
+    <meta name="author" content="Shaswathe">
+
+    <title>Shaswathe | Portfolio</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
 </head>
+
 <body>
-<header class="site-header"><a class="logo" href="#home">SH<span>.</span></a><button id="menuToggle" class="menu-toggle" aria-label="Toggle menu">☰</button>
-<nav id="nav"><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#journey">Journey</a><a href="#certificates">Certificates</a><a href="#contact">Contact</a></nav></header>
-<main>
-<section id="home" class="hero section-wrap">
-<div class="hero-copy">
-<p class="pill">● OPEN TO OPPORTUNITIES</p><p class="eyebrow">HELLO, I'M</p>
-<h1 class="hero-title"><span class="name-line">Shaswathe<span class="pink">.</span></span><span class="muted title-line">I turn data into</span><span class="gradient title-line">insights<span class="cursor">|</span></span></h1>
-<p class="lead">An aspiring Data Analyst using Python, SQL, Power BI, and Excel to transform raw data into clear insights, interactive dashboards, and practical business solutions.</p>
-<div class="actions"><a class="btn primary" href="#projects">Explore my work ↘</a><a class="btn" href="#contact">Get in touch ↗</a><a class="btn" href="documents/Shaswathe_Resume.pdf" target="_blank" rel="noreferrer">View Resume ↗</a></div>
-<p class="meta">● Based in India　 Data Analytics · Automation · Engineering</p>
-</div>
-<div class="visual" id="heroVisual"><div class="portrait" id="portrait"><img src="assets/images/portfolio-design-preview.png" alt="Shaswathe portrait" onerror="this.style.display='none';document.getElementById('portraitFallback').style.display='grid'"><div id="portraitFallback">Add your portrait<br>as profile.webp</div></div>
+
+    <!-- =========================================
+         HEADER / NAVIGATION
+    ========================================== -->
+
+    <header class="site-header">
+
+        <a class="logo" href="#home" aria-label="Shaswathe home">
+            SH<span>.</span>
+        </a>
+
+        <button
+            id="menuToggle"
+            class="menu-toggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="nav">
+
+            ☰
+
+        </button>
+
+        <nav id="nav">
+
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#journey">Journey</a>
+            <a href="#certificates">Certificates</a>
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
 
 
+    <main>
 
-<div class="tech-floats">
+        <!-- =========================================
+             HERO SECTION
+        ========================================== -->
 
-    <aside class="tech-float python">
-        <img src="assets/icons/Python_png.png" alt="Python">
-        <span>Python</span>
-    </aside>
+        <section id="home" class="hero section-wrap">
 
-    <aside class="tech-float excel">
-        <img src="assets/icons/Excel_png.png" alt="Excel">
-        <span>Excel</span>
-    </aside>
+            <div class="hero-copy">
 
-    <aside class="tech-float sql">
-        <img src="assets/icons/SQL_png.png" alt="SQL">
-        <span>SQL</span>
-    </aside>
+                <p class="pill">
+                    ● OPEN TO OPPORTUNITIES
+                </p>
 
-    <aside class="tech-float databricks">
-        <img src="assets/icons/Databricks_png.png" alt="Databricks">
-        <span>Databricks</span>
-    </aside>
+                <p class="eyebrow">
+                    HELLO, I'M
+                </p>
 
-    <aside class="tech-float snowflake">
-        <img src="assets/icons/Snowflakes_png.png" alt="Snowflake">
-        <span>Snowflake</span>
-    </aside>
 
-    <aside class="tech-float powerbi">
-        <img src="assets/icons/Power_BI_png.png" alt="Power BI">
-        <span>Power BI</span>
-    </aside>
+                <!-- HERO HEADING -->
 
-</div>
-</div>
-</section>
+                <h1 class="hero-title">
 
-<section id="about" class="section-wrap section reveal"><p class="eyebrow">01 / ABOUT</p><h2>Curious by nature.<br><span class="muted">Driven by data.</span></h2><p class="lead">I turn complex datasets and engineering workflows into useful, understandable solutions.</p></section>
-<section id="skills" class="section-wrap section reveal"><p class="eyebrow">02 / TOOLKIT</p><h2>Tools I work with.</h2><div id="skillsGrid" class="tags"></div></section>
-<section id="projects" class="section-wrap section reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects &amp; experiments.</h2><div id="projectsGrid" class="cards"></div></section>
-<section id="journey" class="section-wrap section reveal"><p class="eyebrow">04 / THE JOURNEY</p><h2>Learning, building,<br><span class="muted">moving forward.</span></h2><div class="timeline"><div class="track"></div><div id="timelineProgress"></div>
-<article><i></i><small>MAR 2026 — PRESENT</small><div><h3>Junior Project Engineer</h3><b>SyncSols Private Limited</b><p>Supporting engineering workflows, technical documentation, wiring-diagram understanding, and project coordination.</p></div></article>
-<article><i></i><small>NOV 2022 — MAY 2025</small><div><h3>B.Tech. Mechatronics Engineering</h3><b>Puducherry Technological University</b><p>Foundation across mechanical, electronics, automation, and software-oriented engineering concepts.</p></div></article>
-<article><i></i><small>AUG 2019 — MAY 2022</small><div><h3>Diploma in Mechanical Engineering</h3><b>Sri Manakula Vinayagar Polytechnic College</b><p>Practical engineering fundamentals and technical problem-solving skills.</p></div></article></div></section>
-<section id="certificates" class="section-wrap section reveal"><p class="eyebrow">05 / CERTIFICATIONS</p><h2>Certifications</h2><div id="certificatesGrid" class="cards"></div></section>
-<section id="contact" class="section-wrap section reveal"><p class="eyebrow">06 / CONTACT</p><h2>Let's build something <span class="gradient">meaningful.</span></h2><a class="btn primary" href="mailto:shaswathebhuvaneshe@gmail.com">Email me ↗</a><a class="btn" href="https://linkedin.com/in/shaswathe" target="_blank">LinkedIn ↗</a><a class="btn" href="https://github.com/shaswathe" target="_blank">GitHub ↗</a></section>
-</main><footer>© <span id="year"></span> Shaswathe · Designed with curiosity and code.</footer>
-<script src="js/projects.js"></script><script src="js/main.js"></script><script src="js/animations.js"></script><script src="js/cursor-follow.js"></script>
-</body></html>
+                    <span class="name-line">
+                        Shaswathe<span class="pink">.</span>
+                    </span>
+
+                    <span class="muted title-line">
+                        I turn data into
+                    </span>
+
+                    <!-- ROTATING TEXT -->
+                    <!-- Animation controlled by js/main.js -->
+
+                    <span class="gradient title-line rotating-line">
+
+                        <span id="typedText">insights</span><span
+                            class="cursor"
+                            aria-hidden="true">|</span>
+
+                    </span>
+
+                </h1>
+
+
+                <!-- INTRODUCTION -->
+
+                <p class="lead">
+
+                    An aspiring Data Analyst using Python, SQL,
+                    Power BI, and Excel to transform raw data into
+                    clear insights, interactive dashboards, and
+                    practical business solutions.
+
+                </p>
+
+
+                <!-- HERO BUTTONS -->
+
+                <div class="actions">
+
+                    <a class="btn primary" href="#projects">
+                        Explore my work ↘
+                    </a>
+
+                    <a class="btn" href="#contact">
+                        Get in touch ↗
+                    </a>
+
+                    <a
+                        class="btn"
+                        href="documents/Shaswathe_Resume.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        View Resume ↗
+
+                    </a>
+
+                </div>
+
+
+                <!-- HERO META -->
+
+                <p class="meta">
+
+                    ● Based in India　
+                    Data Analytics · Automation · Engineering
+
+                </p>
+
+            </div>
+
+
+            <!-- =====================================
+                 HERO VISUAL / PORTRAIT
+            ====================================== -->
+
+            <div class="visual" id="heroVisual">
+
+                <div class="portrait" id="portrait">
+
+                    <img
+                        src="assets/images/portfolio-design-preview.png"
+                        alt="Shaswathe portrait"
+                        onerror="this.style.display='none';document.getElementById('portraitFallback').style.display='grid'">
+
+                    <div id="portraitFallback">
+
+                        Add your portrait<br>
+                        as profile.webp
+
+                    </div>
+
+                </div>
+
+
+                <!-- =================================
+                     FLOATING TECHNOLOGY ICONS
+                ================================== -->
+
+                <div class="tech-floats">
+
+                    <aside class="tech-float python">
+
+                        <img
+                            src="assets/icons/Python_png.png"
+                            alt="Python">
+
+                        <span>Python</span>
+
+                    </aside>
+
+
+                    <aside class="tech-float excel">
+
+                        <img
+                            src="assets/icons/Excel_png.png"
+                            alt="Excel">
+
+                        <span>Excel</span>
+
+                    </aside>
+
+
+                    <aside class="tech-float sql">
+
+                        <img
+                            src="assets/icons/SQL_png.png"
+                            alt="SQL">
+
+                        <span>SQL</span>
+
+                    </aside>
+
+
+                    <aside class="tech-float databricks">
+
+                        <img
+                            src="assets/icons/Databricks_png.png"
+                            alt="Databricks">
+
+                        <span>Databricks</span>
+
+                    </aside>
+
+
+                    <aside class="tech-float snowflake">
+
+                        <img
+                            src="assets/icons/Snowflakes_png.png"
+                            alt="Snowflake">
+
+                        <span>Snowflake</span>
+
+                    </aside>
+
+
+                    <aside class="tech-float powerbi">
+
+                        <img
+                            src="assets/icons/Power_BI_png.png"
+                            alt="Power BI">
+
+                        <span>Power BI</span>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             ABOUT SECTION
+        ========================================== -->
+
+        <section
+            id="about"
+            class="section-wrap section reveal">
+
+            <p class="eyebrow">01 / ABOUT</p>
+
+            <h2>
+
+                Curious by nature.<br>
+
+                <span class="muted">
+                    Driven by data.
+                </span>
+
+            </h2>
+
+            <p class="lead">
+
+                I turn complex datasets and engineering workflows
+                into useful, understandable solutions.
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================================
+             SKILLS SECTION
+        ========================================== -->
+
+        <section
+            id="skills"
+            class="section-wrap section reveal">
+
+            <p class="eyebrow">02 / TOOLKIT</p>
+
+            <h2>Tools I work with.</h2>
+
+            <div id="skillsGrid" class="tags"></div>
+
+        </section>
+
+
+        <!-- =========================================
+             PROJECTS SECTION
+        ========================================== -->
+
+        <section
+            id="projects"
+            class="section-wrap section reveal">
+
+            <p class="eyebrow">03 / SELECTED WORK</p>
+
+            <h2>Projects &amp; experiments.</h2>
+
+            <div id="projectsGrid" class="cards"></div>
+
+        </section>
+
+
+        <!-- =========================================
+             JOURNEY / EXPERIENCE SECTION
+        ========================================== -->
+
+        <section
+            id="journey"
+            class="section-wrap section reveal">
+
+            <p class="eyebrow">04 / THE JOURNEY</p>
+
+            <h2>
+
+                Learning, building,<br>
+
+                <span class="muted">
+                    moving forward.
+                </span>
+
+            </h2>
+
+
+            <div class="timeline">
+
+                <div class="track"></div>
+
+                <div id="timelineProgress"></div>
+
+
+                <!-- EXPERIENCE 1 -->
+
+                <article>
+
+                    <i></i>
+
+                    <small>MAR 2026 — PRESENT</small>
+
+                    <div>
+
+                        <h3>Junior Project Engineer</h3>
+
+                        <b>SyncSols Private Limited</b>
+
+                        <p>
+
+                            Supporting engineering workflows,
+                            technical documentation, wiring-diagram
+                            understanding, and project coordination.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EDUCATION 1 -->
+
+                <article>
+
+                    <i></i>
+
+                    <small>NOV 2022 — MAY 2025</small>
+
+                    <div>
+
+                        <h3>B.Tech. Mechatronics Engineering</h3>
+
+                        <b>Puducherry Technological University</b>
+
+                        <p>
+
+                            Foundation across mechanical, electronics,
+                            automation, and software-oriented
+                            engineering concepts.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+
+                <!-- EDUCATION 2 -->
+
+                <article>
+
+                    <i></i>
+
+                    <small>AUG 2019 — MAY 2022</small>
+
+                    <div>
+
+                        <h3>Diploma in Mechanical Engineering</h3>
+
+                        <b>
+                            Sri Manakula Vinayagar Polytechnic College
+                        </b>
+
+                        <p>
+
+                            Practical engineering fundamentals
+                            and technical problem-solving skills.
+
+                        </p>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================================
+             CERTIFICATIONS SECTION
+        ========================================== -->
+
+        <section
+            id="certificates"
+            class="section-wrap section reveal">
+
+            <p class="eyebrow">05 / CERTIFICATIONS</p>
+
+            <h2>Certifications</h2>
+
+            <div id="certificatesGrid" class="cards"></div>
+
+        </section>
+
+
+        <!-- =========================================
+             CONTACT SECTION
+        ========================================== -->
+
+        <section
+            id="contact"
+            class="section-wrap section reveal">
+
+            <p class="eyebrow">06 / CONTACT</p>
+
+            <h2>
+
+                Let's build something
+
+                <span class="gradient">
+                    meaningful.
+                </span>
+
+            </h2>
+
+
+            <a
+                class="btn primary"
+                href="mailto:shaswathebhuvaneshe@gmail.com">
+
+                Email me ↗
+
+            </a>
+
+
+            <a
+                class="btn"
+                href="https://www.linkedin.com/in/shaswathe-r-35944831b/"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                LinkedIn ↗
+
+            </a>
+
+
+            <a
+                class="btn"
+                href="https://github.com/shaswathe"
+                target="_blank"
+                rel="noopener noreferrer">
+
+                GitHub ↗
+
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+        © <span id="year"></span>
+
+        Shaswathe · Designed with curiosity and code.
+
+    </footer>
+
+
+    <!-- =========================================
+         JAVASCRIPT FILES
+         IMPORTANT: Keep this order
+    ========================================== -->
+
+    <!-- Portfolio data -->
+    <script src="js/projects.js"></script>
+
+    <!-- Main functionality and rotating text -->
+    <script src="js/main.js"></script>
+
+    <!-- Scroll reveal and timeline animation -->
+    <script src="js/animations.js"></script>
+
+    <!-- Portrait cursor-following animation -->
+    <script src="js/cursor-follow.js"></script>
+
+
+</body>
+</html>
